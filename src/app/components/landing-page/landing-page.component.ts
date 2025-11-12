@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener, Inject } from '@angular/core';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
@@ -17,7 +17,7 @@ export class LandingPageComponent implements OnInit, OnDestroy {
   activeFeedbackIndex: number = 0;
   private feedbackInterval: any;
 
-  constructor(private translationService: TranslationService) {}
+  constructor(@Inject(TranslationService) private translationService: TranslationService) {}
 
   ngOnInit() {
     // Carregar tema do localStorage
