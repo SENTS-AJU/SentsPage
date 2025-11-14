@@ -7,6 +7,9 @@ import { TranslationService } from '../../services/translation.service';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
+  scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
   currentTheme: 'light' | 'dark' = 'light';
   currentLang: 'pt' | 'en' = 'pt';
   menuOpen = false;

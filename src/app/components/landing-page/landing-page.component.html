@@ -5,7 +5,8 @@
       <a href="#home" class="logo">
         <img 
           [src]="currentTheme === 'dark' ? 'assets/images/logos/sentsBranco.png' : 'assets/images/logos/sents1.png'" 
-          alt="SENTS" 
+          alt="SENTS"
+          (click)="scrollToTop()" class="logo" 
           class="logo-image"
         >
       </a>
@@ -19,7 +20,7 @@
 
       <!-- Navigation Menu -->
       <ul class="nav-menu" [class.active]="menuOpen">
-        <li><a href="#home" class="nav-link" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
+        <li><a href="#" class="nav-link" (click)="scrollToTop(); closeMenu()">{{ 'nav.home' | translate }}</a></li>
         <li><a href="#sobre" class="nav-link" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
         <li><a href="#clientes" class="nav-link" (click)="closeMenu()">{{ 'nav.clients' | translate }}</a></li>
         <li><a href="#servicos" class="nav-link" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
