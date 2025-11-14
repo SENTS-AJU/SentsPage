@@ -1,0 +1,13 @@
+# robots.txt para SENTS
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sents.com.br/sitemap.xml
+
+# Otimização de crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
