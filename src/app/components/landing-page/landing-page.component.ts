@@ -13,7 +13,7 @@ export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
   currentTheme: 'light' | 'dark' = 'light';
   currentLang: 'pt' | 'en' = 'pt';
   menuOpen = false;
-  whatsappNumber = '557998178-4501';
+  whatsappNumber = '5579981784501';
   
   feedbacks: number[] = [1, 2, 3, 4, 5];
   currentFeedbacks: number[] = [];
